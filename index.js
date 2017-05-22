@@ -41,7 +41,7 @@ class NumberPicker extends Component {
 
     onChange = (event) => {
         let value = event.nativeEvent.newValue;
-        if (thisprops.onChange) this.props.onChange(value);
+        if (this.props.onChange) this.props.onChange(value);
     };
 
 }

@@ -1,4 +1,4 @@
-import { PropTypes, Component } from 'react';
+import React, { PropTypes, Component } from 'react';
 import { requireNativeComponent, View } from 'react-native';
 
 let viewInterface = {
@@ -34,7 +34,8 @@ class NumberPicker extends Component {
         return (
             <NativeNumberPicker style={this.props.style}
                                 values={this.props.values}
-                                selected={this.props.selected} />
+                                selected={this.props.selected}
+                                onChange={this.props.onChange}/>
         );
     }
 

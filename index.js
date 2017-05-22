@@ -35,7 +35,7 @@ class NumberPicker extends Component {
             <NativeNumberPicker style={this.props.style}
                                 values={this.props.values}
                                 selected={this.props.selected}
-                                onChange={this.props.onChange}/>
+                                onChange={this.onChange}/>
         );
     }
 
